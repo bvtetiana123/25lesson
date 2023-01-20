@@ -1,0 +1,830 @@
+{
+  "id": "60f63501-6533-4f54-a9a9-40a1209b4063",
+  "version": "2.0",
+  "name": "beet",
+  "url": "https://rozetka.com.ua/ua/",
+  "tests": [{
+    "id": "9783f9f9-6804-4419-9ba9-d77a125af6c8",
+    "name": "додавання товару в корзину",
+    "commands": [{
+      "id": "e4317711-8372-4dd9-9d61-de64e129c317",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30cfd377-b94e-411f-a588-a56525bf6f29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1003x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0416a45-61b4-41d3-b3e0-7a745621a387",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d85aed4-bbcc-4dae-a678-eb1a8fde7fb9",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "245161903"
+    }, {
+      "id": "25a77a4e-590b-45ee-9153-3b444b6d4296",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(@class,'button button_color')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d832506-57cd-4e07-95fc-78e8c53a97f8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[text()=' Купити ']",
+      "targets": [
+        ["css=.ng-star-inserted > .buy-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[19]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button", "xpath:idRelative"],
+        ["xpath=//app-buy-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc3f1458-94cc-46f6-b9a5-d12277adc908",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[contains(@src,'images/big/215770075')]",
+      "targets": [],
+      "value": "//*[contains(@src,'images/big/215770075')]"
+    }, {
+      "id": "5ac34951-1573-49e4-ae6c-1f994aa1bb89",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@href='#icon-header-basket']",
+      "targets": [
+        ["css=.header__button--active use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b8df53c-5250-475d-9627-990749e73fc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cartProductActions0",
+      "targets": [
+        ["id=cartProductActions0", "id"],
+        ["css=#cartProductActions0", "css:finder"],
+        ["xpath=//button[@id='cartProductActions0']", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b813f2d2-8a95-4ec0-af08-43a9908be358",
+      "comment": "",
+      "command": "click",
+      "target": "//*[@type='button'] [@class='button button--medium button--with-icon button--link']",
+      "targets": [
+        ["css=.ng-star-inserted > .button--medium", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c858929-cea2-48e7-aaaa-916bf79cf2a4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "877cb818-9e67-457e-92c1-63337cf151f0",
+    "name": "пошук в пошуковій стрічці",
+    "commands": [{
+      "id": "9387f55e-0921-4be6-824e-ef78efb84469",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c514312-5779-4b9c-86bf-461db28f6882",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1000x674",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc4dbc01-4a6c-4c26-9bfb-34cf9905f826",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0752f27d-ece1-4b83-8817-7fd7490fe38f",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "пилосос"
+    }, {
+      "id": "6dfb54d2-bc40-4529-a633-56a928d48ade",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Знайти')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "468c97fb-a5f7-4858-91ae-0d469e771254",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//rz-product-top/div",
+      "targets": [
+        ["css=rz-product-top > .layout", "css:finder"],
+        ["xpath=//rz-product-top/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d3409ee-6a35-4ecc-b395-b83f528f0df9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//rz-product-top/div/div",
+      "targets": [
+        ["css=.product__heading", "css:finder"],
+        ["xpath=//rz-product-top/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd4960f6-6621-4f3f-9001-060c15290f99",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b85fd172-1cb8-43ce-93b2-fe166d645ffa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product__heading",
+      "targets": [],
+      "value": "Пилосос без мішка Dyson UP15 Multifloor"
+    }, {
+      "id": "c2677fc8-78e7-4153-8e0b-4a76160b8f57",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d5949072-abb9-4ef7-9bb7-bc3825cd0a58",
+    "name": "сортування ціни",
+    "commands": [{
+      "id": "275d6f2b-7ff1-4952-a846-8de258a885d2",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "944391bf-b421-462f-9147-339acfe88283",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a08d105b-0ed2-47b7-8b5b-4f2250e5e942",
+      "comment": "",
+      "command": "click",
+      "target": "id=fat-menu",
+      "targets": [
+        ["id=fat-menu", "id"],
+        ["css=#fat-menu", "css:finder"],
+        ["xpath=//button[@id='fat-menu']", "xpath:attributes"],
+        ["xpath=//rz-header-fat-menu/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cc9a55a-9572-4477-8a17-5cc9fc6fa398",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Товари для дому",
+      "targets": [
+        ["linkText=Товари для дому", "linkText"],
+        ["css=.menu-categories__link_state_hovered", "css:finder"],
+        ["xpath=//a[contains(text(),'Товари для дому')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://rozetka.com.ua/ua/tovary-dlya-doma/c2394287/')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Товари для дому')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a4b7a36-0fc3-4ef7-a104-80a25877df2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ковдри",
+      "targets": [
+        ["linkText=Ковдри", "linkText"],
+        ["css=.ng-star-inserted:nth-child(2) .portal-grid__cell:nth-child(1) .tile-cats__item:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ковдри')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/blankets/c169825/')])[3]", "xpath:href"],
+        ["xpath=//rz-list-tile/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6b117d3-861e-485a-ab1b-78c6781159d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slider-filter__input:nth-child(1)",
+      "targets": [
+        ["css=.slider-filter__input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4274a235-486c-475b-ae38-b56e91865612",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slider-filter__input:nth-child(1)",
+      "targets": [
+        ["css=.slider-filter__input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be155236-1ce1-4147-9b10-8232200ae33b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.slider-filter__input:nth-child(1)",
+      "targets": [
+        ["css=.slider-filter__input:nth-child(1)", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//fieldset/div/input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "3da584f3-60ce-4e18-a0a2-b7440c02f5ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slider-filter__inner",
+      "targets": [
+        ["css=.slider-filter__inner", "css:finder"],
+        ["xpath=//fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c4d55b2-dd8b-45d5-8cf3-d7e241184558",
+      "comment": "",
+      "command": "type",
+      "target": "css=.slider-filter__input:nth-child(3)",
+      "targets": [
+        ["css=.slider-filter__input:nth-child(3)", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "250"
+    }, {
+      "id": "9837d77a-9811-48c2-84ae-fcb951a56960",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button_color_gray",
+      "targets": [
+        ["css=.button_color_gray", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//fieldset/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9bd671a-a167-4e2e-a2bb-e813e509e882",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "651d16dc-d4a3-4d94-9672-3c57bb0fcf8c",
+    "name": "збільшення товару в корзині",
+    "commands": [{
+      "id": "74bd10db-9656-4d54-914f-2373b5ab7b8c",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "324a7d54-65dd-441b-b222-e4f3c4aef8b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1005x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee0a86b3-3e46-4462-ba6b-53ea8020e46b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e3c0282-caf2-459d-8b1e-c25517431034",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "245161903"
+    }, {
+      "id": "0d9d8d52-9341-4f78-a587-e754216e3fd5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(@class,'button button_color')]",
+      "targets": [
+        ["css=.button--medium > .buy-button__label", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li/rz-product-buy-btn/app-buy-button/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "700b079c-1656-4fd8-b6fc-4a6b4a959671",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[text()=' Купити ']",
+      "targets": [
+        ["css=.notification__button", "css:finder"],
+        ["xpath=(//button[@type='button'])[71]", "xpath:attributes"],
+        ["xpath=//rz-template-default/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Відкрити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8089a6ff-2817-49a8-a924-1f8eee638af6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button--active > svg",
+      "targets": [
+        ["css=.header__button--active > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dd4c60f-fba6-42d2-ba72-f630b172f410",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[9]",
+      "targets": [
+        ["css=.button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d5154d9-59c8-4138-8541-0037cbd92d0e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[9]",
+      "targets": [
+        ["css=.button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b238b3b-0ca1-4b03-813d-9ebb1d0f8259",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[9]",
+      "targets": [
+        ["css=.button:nth-child(3)", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//rz-cart-counter/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaedc86d-23ec-4632-bbdb-d0cb4cf03574",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cartProductActions0",
+      "targets": [
+        ["id=cartProductActions0", "id"],
+        ["css=#cartProductActions0", "css:finder"],
+        ["xpath=//button[@id='cartProductActions0']", "xpath:attributes"],
+        ["xpath=//rz-popup-menu/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "122a4985-12e2-482c-a9f6-22b19dd49bf4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Видалити')]",
+      "targets": [
+        ["css=.ng-star-inserted > .button--medium", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[@id='cartProductActions0']/ul/li/rz-trash-icon/button", "xpath:idRelative"],
+        ["xpath=//rz-trash-icon/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Видалити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "845027d6-c3b9-4db9-a25c-e30fe62df37a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8e4c1336-a4d5-4fd0-a96c-28bc8ab415ee",
+    "name": "введення невалідних даних в пошукову стрічку (змінні)",
+    "commands": [{
+      "id": "fa519354-3050-4eac-b0df-0581419f68a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b75206ac-2daa-4f8b-ba80-90960bd92fd7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1003x676",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce6f8b04-f8bb-475e-aba9-13abbce39daa",
+      "comment": "",
+      "command": "storeValue",
+      "target": "xpath=//div/input",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "35e1577b-b81f-4e4e-a473-b78f44eea9ca",
+      "comment": "",
+      "command": "echo",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56446edf-761d-4c9e-9acf-0ee26ec36443",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+    }, {
+      "id": "dc4799df-e8ce-4a3b-a4de-6757d6ae6041",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(@class,'button button_color')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4de82ac0-bb37-4500-bebd-d5c8b45b8741",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-empty",
+      "targets": [],
+      "value": "За заданими параметрами не знайдено жодної моделі"
+    }, {
+      "id": "3d207fec-2663-4680-ac92-349a6f7b1341",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a12c1c00-b918-4bde-981a-e792ddf3644e",
+    "name": "відфільтровування товару (2-3 рівень)",
+    "commands": [{
+      "id": "e253dd7d-f8d7-45a2-9bcc-888e6be90997",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97d4c4bc-11fc-450c-b84a-3dce1e3fa4dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5866941e-8cf2-40ed-9238-061ee2c71af1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Зоотовари",
+      "targets": [
+        ["linkText=Зоотовари", "linkText"],
+        ["css=.menu-categories_type_main > .menu-categories__item:nth-child(13) > .menu-categories__link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Зоотовари')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/zootovary/c3520929/')])[2]", "xpath:href"],
+        ["xpath=//rz-sidebar-fat-menu/div/ul/li[13]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce80dec3-3a0e-4249-be11-82ec5df9eec0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Коти",
+      "targets": [
+        ["linkText=Коти", "linkText"],
+        ["css=.ng-star-inserted:nth-child(3) > .portal-section .portal-grid__cell:nth-child(1) .tile-cats__heading", "css:finder"],
+        ["xpath=//a[contains(text(),'Коти')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/tovary-dlia-koshek/c4626068/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Коти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30dba1ad-172e-410f-943e-c55666bdf98c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Корм",
+      "targets": [
+        ["linkText=Корм", "linkText"],
+        ["css=.portal-grid_type_1_4 > .portal-grid__cell:nth-child(1) .tile-cats__heading", "css:finder"],
+        ["xpath=//a[contains(text(),'Корм')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/food_for_cats/c1461212/')])[2]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Корм')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "516ea6f5-b53a-4e22-8829-99c14f2dfc23",
+      "comment": "",
+      "command": "click",
+      "target": "css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(2) > .checkbox-filter__link",
+      "targets": [
+        ["css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(2) > .checkbox-filter__link", "css:finder"],
+        ["xpath=//a[contains(@href, '/ua/food_for_cats/c1461212/producer=club-4-paws/')]", "xpath:href"],
+        ["xpath=//rz-filter-section-autocomplete/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "244b9cf7-7238-444e-b226-e3d52b9794b3",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "//h1[@class='catalog-heading ng-star-inserted']",
+      "targets": [],
+      "value": "Корм для собак"
+    }, {
+      "id": "bb200e1d-0881-4220-89f1-cd61c7e97c98",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "23c708b4-0f5d-4d0d-b16e-07a2ea972e53",
+    "name": "читання відгуків (2-3 рівень)",
+    "commands": [{
+      "id": "81111c9a-8529-4282-9a08-7969e9c80978",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b63f9323-cc44-4662-ad5b-6ddc94205784",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbd07306-4485-4f5b-b4d6-77965bbc1793",
+      "comment": "",
+      "command": "click",
+      "target": "id=fat-menu",
+      "targets": [
+        ["id=fat-menu", "id"],
+        ["css=#fat-menu", "css:finder"],
+        ["xpath=//button[@id='fat-menu']", "xpath:attributes"],
+        ["xpath=//rz-header-fat-menu/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de90a869-1d3d-4b93-9024-69c7383f73fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ноутбуки",
+      "targets": [
+        ["linkText=Ноутбуки", "linkText"],
+        ["css=.menu-categories__item:nth-child(1) .menu__hidden-column:nth-child(1) > .menu__hidden-list:nth-child(1) .menu__hidden-title", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ноутбуки')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/notebooks/c80004/')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20b67a5b-b43a-4039-8afa-c365de79f1be",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//rz-filter-section-autocomplete/ul/li[2]/a",
+      "targets": [
+        ["css=rz-filter-section-autocomplete > .checkbox-filter:nth-child(1) > .checkbox-filter__item:nth-child(2) > .checkbox-filter__link", "css:finder"],
+        ["xpath=(//a[contains(@href, '/ua/notebooks/c80004/producer=acer/')])[2]", "xpath:href"],
+        ["xpath=//rz-filter-section-autocomplete/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95ebba1d-5920-40b6-87d1-67236fb2ff51",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black')]",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ноутбук Acer Aspire 7 A715-42G-R3EZ (NH.QBFEU.00C) Charcoal Black')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9de19a5b-de57-48d5-95c1-b8783c2b95ca",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/acer_nh_qbfeu_00c/p288376303/comments/')])[2]",
+      "targets": [
+        ["css=.tabs__item:nth-child(3) > .tabs__link", "css:finder"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/acer_nh_qbfeu_00c/p288376303/comments/')])[2]", "xpath:href"],
+        ["xpath=//rz-tabs/div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc5e6bba-0a06-43c3-8e06-b6bf4ed576d4",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "//*[contains(@src,'images/big/215770075')]",
+      "targets": [],
+      "value": "//*[contains(@src,'images/big/215770075')]"
+    }, {
+      "id": "db92555c-338c-4342-9198-d371666a0828",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a0a3aaed-d51e-4b1b-965e-76db72322841",
+    "name": "додавання товару в кредит (2-3 рівень)",
+    "commands": [{
+      "id": "d88b751f-4f98-4560-a53a-a16fb7e6486e",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bef6dfb6-a5f5-4e86-9832-80b977d63aeb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70fb899b-827d-484a-b522-b3804be2a613",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a24cc165-ba2c-4a88-839d-7a5cc2d0b78b",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "73179681"
+    }, {
+      "id": "d570fc8c-4383-4aba-a758-5210850c4be3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[contains(@class,'button button_color')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a618e0f-ed92-4a59-964d-cb304cb07045",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Купити в кредит')]",
+      "targets": [
+        ["css=.button--navy", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[@id='#scrollArea']/div/div[2]/rz-product-main-info/div/div/ul/li[2]/rz-product-credit/button", "xpath:idRelative"],
+        ["xpath=//rz-product-credit/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити в кредит')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e56dd445-9b1e-4e9b-a3d2-bf782e9bab68",
+      "comment": "",
+      "command": "click",
+      "target": "id=creditSubmitButton",
+      "targets": [
+        ["id=creditSubmitButton", "id"],
+        ["css=.ng-star-inserted:nth-child(1) > .credit-component__item #creditSubmitButton", "css:finder"],
+        ["xpath=//button[@id='creditSubmitButton']", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Вибрати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8113e264-fc32-4aec-abc1-38778023cf15",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "id=add-email-5_4107",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4579e9c7-2e0c-4da3-8a89-376b65c2c0f8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e1c8a5ff-3d71-4356-8f91-a4a1a22db0e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9783f9f9-6804-4419-9ba9-d77a125af6c8"]
+  }],
+  "urls": ["https://rozetka.com.ua/ua/"],
+  "plugins": []
+}
